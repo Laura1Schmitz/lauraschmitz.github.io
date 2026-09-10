@@ -1,41 +1,3 @@
-# Homepage Laura Schmitz
-
-Statische Seite, kein Build-Schritt, kein Jekyll. Drei Dateien:
-
-```
-index.html                     alle Inhalte
-assets/style.css               Farben, Schriften, Layout
-assets/laura-schmitz.jpg       Portraitfoto (aktuell Platzhalter)
-```
-
-## Online stellen (GitHub Pages)
-
-1. Auf github.com ein neues, **öffentliches** Repository anlegen mit dem Namen
-   `DEINUSERNAME.github.io` — also z. B. `lauraschmitz.github.io`.
-   Der Name entscheidet über die spätere Adresse.
-2. Im leeren Repo auf **Add file → Upload files** klicken. Aus dem entpackten
-   ZIP `index.html`, `README.md` und den Ordner `assets` hineinziehen —
-   Ordner mitsamt Inhalt, GitHub übernimmt die Struktur. Unten auf
-   **Commit changes**.
-3. **Settings → Pages**: unter „Build and deployment" bei *Source*
-   „Deploy from a branch" wählen, Branch `main`, Ordner `/ (root)`, **Save**.
-4. Nach ein bis zwei Minuten ist die Seite unter
-   `https://DEINUSERNAME.github.io` erreichbar.
-
-Änderungen später: Datei im Repo öffnen, Stiftsymbol, bearbeiten, **Commit**.
-Nach etwa einer Minute ist die Seite aktualisiert.
-
-## Foto austauschen
-
-Aktuell eingebunden: `assets/standing.JPEG`. Bei einem anderen Bild den Pfad in
-`index.html` anpassen (Suche nach `standing.JPEG`). Achtung: GitHub Pages
-unterscheidet Gross- und Kleinschreibung — `.JPEG` und `.jpeg` sind zwei
-verschiedene Dateien.
-
-Das Foto wird auf Hochformat 4:5 zugeschnitten. Soll es ungeschnitten
-erscheinen, in `assets/style.css` unter `.portrait img` die drei Zeilen
-`aspect-ratio`, `object-fit` und `object-position` loeschen.
-
 ## Farben ändern
 
 Ganz oben in `assets/style.css` stehen alle Farben an einer Stelle:
@@ -73,13 +35,4 @@ Optional ein aufklappbares Abstract direkt darunter:
 <details><summary>Abstract</summary><p>Text …</p></details>
 ```
 
-## Noch offen
 
-- Platzhalter `assets/laura-schmitz.jpg` aus dem Repo loeschen.
-- Dienstliche E-Mail-Adresse: im Hero und unter „Contact" steht weiterhin
-  `lschmitz@diw.de`. Wenn die BAuA-Adresse oeffentlich gefuehrt werden soll,
-  an beiden Stellen ersetzen (Suche nach `lschmitz@diw.de`).
-- „Lernluecken fuers Leben" (Die Welt, 21.08.2021) hat noch keinen Link —
-  Artikel ist online nicht frei auffindbar.
-- Neue Adresse verlinken: Google Sites, DIW-Profilseite, BAuA-Teamseite,
-  Google-Scholar-Profil (Feld „Homepage"), E-Mail-Signatur.
