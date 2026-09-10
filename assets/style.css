@@ -119,11 +119,27 @@ h3:first-of-type{ margin-top:0; }
 .button.ghost{ background:transparent; color:var(--deep); }
 .button.ghost:hover{ background:rgba(15,79,85,.07); color:var(--deep); }
 
+.profiles{
+  display:flex; flex-wrap:wrap; gap:1.1rem; margin:1.25rem 0 0;
+}
+.profiles a{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:2.1rem; height:2.1rem; border:0; border-radius:50%;
+  color:var(--muted); background:transparent;
+}
+.profiles svg{ width:1.15rem; height:1.15rem; fill:currentColor; }
+.profiles a:hover{ color:var(--paper); background:var(--deep); }
+
 .portrait{ margin:0; }
 .portrait img{
   width:100%; height:auto; display:block; border-radius:2px;
   background:var(--band);
   box-shadow:14px 14px 0 rgba(176,125,36,.22);
+  /* Hochformat-Zuschnitt. Wenn das Foto ungeschnitten erscheinen soll:
+     die naechsten drei Zeilen loeschen. */
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center 25%;
 }
 
 /* ---------- Publikationslisten ---------- */
