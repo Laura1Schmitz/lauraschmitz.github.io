@@ -27,9 +27,14 @@ Nach etwa einer Minute ist die Seite aktualisiert.
 
 ## Foto austauschen
 
-`assets/laura-schmitz.jpg` durch dein eigenes Bild ersetzen — gleicher Dateiname,
-Hochformat, mindestens 640 × 800 Pixel. Wenn du einen anderen Dateinamen nimmst,
-den Pfad in `index.html` anpassen (Suche nach `laura-schmitz.jpg`).
+Aktuell eingebunden: `assets/standing.JPEG`. Bei einem anderen Bild den Pfad in
+`index.html` anpassen (Suche nach `standing.JPEG`). Achtung: GitHub Pages
+unterscheidet Gross- und Kleinschreibung — `.JPEG` und `.jpeg` sind zwei
+verschiedene Dateien.
+
+Das Foto wird auf Hochformat 4:5 zugeschnitten. Soll es ungeschnitten
+erscheinen, in `assets/style.css` unter `.portrait img` die drei Zeilen
+`aspect-ratio`, `object-fit` und `object-position` loeschen.
 
 ## Farben ändern
 
@@ -70,10 +75,11 @@ Optional ein aufklappbares Abstract direkt darunter:
 
 ## Noch offen
 
-- CV liegt derzeit auf Google Drive. Sauberer: PDF ins Repo legen
-  (z. B. `assets/CV_Laura_Schmitz.pdf`) und den Link in `index.html` ändern.
-- Google Scholar, LinkedIn oder Bluesky ergänzen — auskommentiertes Muster
-  steht im Hero-Abschnitt der `index.html`.
-- Zwei Medienbeiträge („Lasst Kinder und Eltern wählen!", „Lernlücken fürs
-  Leben") haben noch keinen Link.
-- Affiliation im Hero prüfen.
+- Platzhalter `assets/laura-schmitz.jpg` aus dem Repo loeschen.
+- Dienstliche E-Mail-Adresse: im Hero und unter „Contact" steht weiterhin
+  `lschmitz@diw.de`. Wenn die BAuA-Adresse oeffentlich gefuehrt werden soll,
+  an beiden Stellen ersetzen (Suche nach `lschmitz@diw.de`).
+- „Lernluecken fuers Leben" (Die Welt, 21.08.2021) hat noch keinen Link —
+  Artikel ist online nicht frei auffindbar.
+- Neue Adresse verlinken: Google Sites, DIW-Profilseite, BAuA-Teamseite,
+  Google-Scholar-Profil (Feld „Homepage"), E-Mail-Signatur.
